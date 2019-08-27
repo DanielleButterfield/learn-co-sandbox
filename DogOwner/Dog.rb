@@ -16,7 +16,7 @@ class Dog
             dog_owner.dog == self
         end
 
-        dog_owners.map do |dog_owner|
+        owners = dog_owners.map do |dog_owner|
             dog_owner.owner
         end
 
