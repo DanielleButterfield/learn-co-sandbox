@@ -5,7 +5,6 @@ class Owner
     def initialize name, age
         @name = name
         @age = age
-        @dogs = []
     end
 
     def add_dog dogs
