@@ -14,7 +14,7 @@ def all_planets
     planet_array
 end
 
-def planet_size
+def large_planets
     planet_array = []
     Planet.all.each do |planet|
         if planet.size.to_i >= 7
