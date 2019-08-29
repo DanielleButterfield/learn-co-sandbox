@@ -16,6 +16,14 @@ class Owner
         end
     end
 
+    def breeds
+        pet_breeds = []
+        Pet.all.each do |pet|
+            pet_breeds.push(pet.breed)
+        end
+        pet_breeds.uniq
+    end
+
     def self.all
         @@all
     end
