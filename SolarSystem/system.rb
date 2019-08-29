@@ -1,5 +1,5 @@
 require 'pry'
-require './planet'
+require_relative './planet'
 
 pluto = Planet.new("Pluto", 1, 9)
 mercury = Planet.new("Mercury", 2, 3)
