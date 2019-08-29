@@ -1,6 +1,6 @@
 class Owner
     attr_reader :name
-    attr_accessor :dogs, :genderIdentity
+    attr_accessor :pets, :genderIdentity
 
     @@all = []
 
@@ -8,6 +8,12 @@ class Owner
         @name = name
         @genderIdentity = genderIdentity
         @@all << self
+    end
+
+    def pets
+        Pet.all.select do |pet|
+            pet.owner == self
+        end
     end
 
     def self.all
