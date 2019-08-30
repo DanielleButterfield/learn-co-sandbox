@@ -29,8 +29,11 @@ def end_game(total, dealer_total)
     puts "House loss. You win!"
   elsif total > dealer_total && total < 21
     puts "House loss. You win!"
+  elsif total < dealer_total && dealer_total < 21
+    puts "#{dealer_total}. House wins."
+  elsif total == dealer_total
+    puts "Draw."
   end
-  p dealer_total
   exit
 end
 
