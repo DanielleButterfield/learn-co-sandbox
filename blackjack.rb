@@ -30,6 +30,8 @@ def end_game(total, dealer_total)
   elsif total > dealer_total && total < 21
     puts "House loss. You win!"
   end
+  p dealer_total
+  exit
 end
 
 def initial_round
@@ -79,14 +81,13 @@ def runner
   welcome
   dealer_total = initial_dealer
   dealer_risk = rand(3)
-  p dealer_risk
   total = initial_round
   while total < 21 && dealer_total < 21 do
     total = hit?(total, dealer_total)
     display_card_total(total)
     dealer_total = dealer_hit(dealer_total, dealer_risk)
   end
-  return end_game(total, dealer_total)
+  end_game(total, dealer_total)
 end
     
 runner
