@@ -1,10 +1,11 @@
-class DogOwner
+class Dogpark
+    attr_reader :pet, :owner
+     
     @@all = []
 
-    def initialize dog, DogOwner
-        @dog = dog
+    def initialize pet, owner
+        @pet = pet
         @owner = owner
-
         @@all << self
     end
 

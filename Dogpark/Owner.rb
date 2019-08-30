@@ -1,12 +1,12 @@
 class Owner
     attr_reader :name
-    attr_accessor :pets, :genderIdentity
+    attr_accessor :pets, :age
 
     @@all = []
 
-    def initialize name, genderIdentity
+    def initialize name, age
         @name = name
-        @genderIdentity = genderIdentity
+        @age = age
         @@all << self
     end
 
