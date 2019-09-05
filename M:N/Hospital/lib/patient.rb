@@ -15,6 +15,12 @@ class Patient
         @@all
     end
 
+    def self.longest_note
+        all.max_by do |patient|
+            patient.notes.length
+        end.name
+    end
+
     def appointments
         Appointment.all.select do |appointment|
             appointment.patient == self
