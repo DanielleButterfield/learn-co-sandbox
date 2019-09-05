@@ -35,4 +35,10 @@ class Doctor
     def num_patients
         patients.length
     end
+
+    def patient_longest_note
+        all.max_by do |patient|
+            patient.notes.length
+        end.name
+    end
 end
