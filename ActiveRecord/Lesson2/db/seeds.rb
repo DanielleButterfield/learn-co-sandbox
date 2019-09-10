@@ -1,3 +1,7 @@
+Review.destroy_all
+Customer.destroy_all
+Restaurant.destroy_all
+
 customer_1 = Customer.create(name: "Bob")
 customer_2 = Customer.create(name: "Sally")
 
