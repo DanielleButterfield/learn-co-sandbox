@@ -13,11 +13,9 @@ class Place
         @@all
     end
 
-    def person
-        @person
-    end
-
-    def place
-        @place
+    def get_person
+        Jointable.all.find do |home|
+            home.place == self
+        end.person
     end
 end

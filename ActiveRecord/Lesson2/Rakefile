@@ -1,0 +1,9 @@
+require_relative 'config/environment'
+require 'sinatra/activerecord/rake'
+
+# Order matters in this file.
+# Test with 'rake -T'
+
+# Create migrate data:
+# rake db:create_migration NAME=create_something_table
+# rake db:migrate

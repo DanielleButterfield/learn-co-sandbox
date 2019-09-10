@@ -17,4 +17,10 @@ class Person
     def full_name
         "#{first_name} #{last_name}"
     end
+
+    def get_place
+        Jointable.all.find do |home|
+            home.person == self
+        end.place
+    end
 end
