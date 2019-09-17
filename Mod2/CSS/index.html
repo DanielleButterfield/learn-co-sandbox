@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+
+        /* Units
+        px
+        rem
+        number
+        seconds
+        percent
+        hex
+        pica
+        points
+        color name
+        rgb
+        hsl */
+
+        body {}
+        /* .class */
+        .dogs {}
+        /* #id */
+        #add-dog-form {}
+        /* wildcard selector */
+        * {}
+        /* indirect descendant */
+        .first-selector #direct-child {}
+        header * {}
+        /* direct descendant */
+        .first-selector > #direct-child {}
+        header > * {}
+        /* sibling selector */
+        .something + .something-at-the-same-level {}
+        /* nth-child, nth-of-type */
+        ul > li:nth-child(3) {}
+        /* :hover */
+        .some-class:hover {}
+        .spacer {
+            padding-left: 400px
+        }
+        header {
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+            order:2;
+        }
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box > span {
+            color: white;
+            font-weight: 700;
+        }
+        </style>
+    </head>
+</html>
