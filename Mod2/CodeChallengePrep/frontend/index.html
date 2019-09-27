@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Heroes!</title>
+  </head>
+  <body>
+    <form method="POST" action="http://localhost:3000/heroes">
+      <label for="real-name">Real Name</label>
+      <input id="real-name" placeholder="New Kid" name="name"/>
+      <br>
+      <br>
+      <label for="hero-name">Hero Name</label>
+      <input id="hero-name" placeholder="The Amazing Butthole" name="super_name"/>
+      <br>
+      <br>
+      <label for="hero-power">Power</label>
+      <select id="hero-power"></select>
+      <br>
+      <br>
+      <input type="submit">
+    </form>
+
+    <script src="app.js"></script>
+  </body>
+</html>
