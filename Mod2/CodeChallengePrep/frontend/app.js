@@ -24,15 +24,13 @@ function createCards(heroes) {
 
 function createOptions(powers) {
   let powerDropdown = document.getElementById("hero-power")
-  power.forEach(power =>
-    
-  )
+  power.forEach()
 }
 
 fetch("http://localhost:3000/heroes")
   .then(response => response.json())
   .then(createCards)
 
-fetch("http://localhost:3000/POwers")
+fetch("http://localhost:3000/powers")
   .then(response => response.json())
   .then(createOptions)
