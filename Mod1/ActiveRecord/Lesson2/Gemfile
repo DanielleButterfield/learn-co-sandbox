@@ -6,7 +6,7 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
 # gem "rails"
 
-gem "activerecord", "~> 5.2"
+gem "activerecord", "~> 6.1"
 gem "sqlite3", "~> 1.4"
 gem "pry", "~> 0.12.2"
 gem "sinatra", "~> 2.0"
